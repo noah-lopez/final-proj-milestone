@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+    <link href="https://code.getmdl.io/1.3.0/material.red-blue.min.css" rel="stylesheet"></link>
+    <script defer="defer" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <title>Project Milestone</title>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="custom_header_row mdl-layout__header-row">
+          <span class="mdl-layout-title">Project Milestone</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="mdl-layout__content" style="display: flex; justify-content: center;">
+        <div class="page-content">
+        <br>
+        <br>
+        <br>
+        <h2 align="middle">Escape from Planet Eshleman </h2>
+        <h5 align="middle">  Marcus Lee, 25812787; Michael Lu, 25464293; Noah Lopez, 25709092 </h5>
+        <h4 align="middle">Summary + Reflection </h4>
+        <p align="middle"> In exploring our options implementing our original game plan, we realized that, outside of the game design portion, it was difficult to tackle a technical challenge that was within scope of the class without literally starting from scratch. So, without reinventing the wheel, and after consultation with TA's and more brainstorming, we decided to pivot our project towards implementing raytracing as a game mechanic.
+
+          The core idea is that we have different weapons that shoot different laser types, and different enemy types that correspond to those weapons. If you pick the right weapon, it will kill the enemy. Otherwise, the laser bounces off the enemy in a manner dependent on its material/BRDF, and can do damage to you or other enemies.
+
+          Our main goal then has pivoted to implementing this functionality: kill if the laser is correct, and raytrace + reflect otherwise.
+          . </p>
+
+        <h4 align="middle">Preliminary Results: </h4>
+        <p align="middle"> In working towards this new goal, so far we have split the work into implementing the raytracing/reflect mechanic, building character models <br> and exploring different materials. We have basic prototypes for all three of these aspects, as seen below:
+ 		   </p>
+
+
+    <div align="middle">
+      <table style="width=100%">
+        <tr>
+          <td>
+            <img src="./1.png" align="middle" width="380px" height = "200px"/>
+          <figcaption align="middle"> An image showing rays fired by our ray gun.</figcaption>
+          </td>
+          <td>
+            <img src="./2.png" align="middle" width="380px" height = "154px"/>
+            <figcaption align="middle"> From left to right: Diffuse/Lambertian, Glossy, Mirror <br>(Ideal Reflective), and Glass (Refractive) </figcaption>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div align="middle">
+      <table style="width=100%">
+        <tr>
+          <td>
+            <img src="./3.jpg" align="middle" width="400px" height = "360px"/>
+            <figcaption align="middle"> Various preliminary game models. <br> Constructed with blender imported to three.</figcaption>
+          </td>
+        </tr>
+      </table>
+    </div> <br> 
+
+        <p align="middle"> Thus, what is left for us to do is put these elements together into a single program and refine them <br> for aesthetic appeal and realism (e.g. using better resolution textures to apply onto the glass sphere as well as the scene background).
+       </p>
+
+
+
+
+
+
+
+
+
+
+ 		<h4 align="middle"> New Work Plan (based on current progress): </h4>
+        <p align="middle"> Week 1: Refined original project idea to utilize ray tracing as its core gameplay mechanic. Looked into different webGl frameworks (three.js, playCanvas etc.)<br>
+
+Week 2: Decide to work with three.js. Spent time familiarizing ourselves with three.js. <br>
+
+Week 3:  Split up work into, raytracing mechanic, models, and textures. Got preliminary versions of each up and running. <br>
+
+Week4/5 (4/24 - 5/1): Refining ray tracing mechanic, textures and models and then merging all three aspects together. Work on poster and final video.  <br>
+
+ 		</p>
+
+ 		<h4 align="middle"> Video </h4>
+    <p align="middle"> 
+      <video width="640" height="480" controls>
+        <source src="./video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+ 		</p>
+
+
+ 		<h4 align="middle"> Slides </h4>
+ 		<p align="middle"> 
+      <a href="./slides.pdf">Click here to see our slides!</a>
+
+ 		</p>
+
+    <br> <br>
+
+        
+
+
+      </main>
+    </div>
+  </body>
+</html>
